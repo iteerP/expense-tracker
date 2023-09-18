@@ -1,0 +1,55 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #BFAD9F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .fade-in-image {animation: fadeIn 800ms}
+  .fade-in-text {animation: fadeIn 1200ms}
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    20% { opacity: .2; }
+    60% { opacity:.6; }
+    100% { opacity: 1; }
+  }
+  
+  img {
+    position: absolute;
+    z-index: 0;
+    border: 20px solid #FFFFFF;
+  }
+  
+  p {
+    z-index: 1;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  button {
+    z-index: 1;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: #b2aa899a;
+    border: none;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: 700ms;
+  }
+
+  p, button {
+    position: relative;
+    bottom: 50px;
+  }
+  button:hover {
+    background-color: #948a619a;
+    transition: 700ms;
+  }
+}
